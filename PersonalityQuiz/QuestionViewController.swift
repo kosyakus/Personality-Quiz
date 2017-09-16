@@ -12,6 +12,13 @@ class QuestionViewController: UIViewController {
     
     var questionIndex = 0
     
+    @IBOutlet weak var singleStackView: UIStackView!
+    
+    @IBOutlet weak var multipleStackView: UIStackView!
+    
+    @IBOutlet weak var rangedStackView: UIStackView!
+    
+    
     var questions: [Question] = [
         Question(text: "Which food do you like the most?",
                  type: .single,
@@ -42,12 +49,16 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateUI() {
+        
     }
     
 
