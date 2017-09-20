@@ -15,12 +15,28 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        calculatePersonalityResult()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func calculatePersonalityResult() {
+        var frequencyOfAnswers: [AnimalType: Int] = [:]
+        
+        let responseTypes = responses.map {$0.type}
+        
+        for response in responseTypes {
+            frequencyOfAnswers[response] = (frequencyOfAnswers[response] ?? 0) + 1
+        }
+        
+        let frequentAnswersSorted = frequencyOfAnswers.sorted(by: {(pair1, pair2) -> Bool in
+            return pair1.value > pair2.value
+        })
+        
+        let mostCommonAnswer = frequentAnswersSorted.first!.key
     }
     
 
