@@ -76,18 +76,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rok-s8-rp1">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="b4A-By-Nzh" eventType="touchUpInside" id="rb1-c2-E78"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xl-vf-euU">
                                         <rect key="frame" x="0.0" y="50" width="343" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="b4A-By-Nzh" eventType="touchUpInside" id="3Fb-Mi-t0u"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucg-3I-CSU">
                                         <rect key="frame" x="0.0" y="100" width="343" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="b4A-By-Nzh" eventType="touchUpInside" id="dlo-BR-Mbv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZN1-zm-6Ul">
                                         <rect key="frame" x="0.0" y="150" width="343" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="b4A-By-Nzh" eventType="touchUpInside" id="mLw-Tb-QCH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -130,7 +142,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YLV-Z9-bA0">
-                                <rect key="frame" x="16" y="241.5" width="343" height="184"/>
+                                <rect key="frame" x="16" y="216.5" width="343" height="234"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uii-kp-YZU">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="31"/>
@@ -188,6 +200,13 @@
                                             </switch>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkA-Bo-sYX">
+                                        <rect key="frame" x="0.0" y="204" width="343" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="b4A-By-Nzh" eventType="touchUpInside" id="NlZ-HR-mxy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -216,6 +235,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="LxZ-Td-CP5"/>
                     <connections>
+                        <outlet property="multiSwitch1" destination="Ocu-Ic-TkN" id="53v-Iq-Bdo"/>
+                        <outlet property="multiSwitch2" destination="CK7-Jd-wVY" id="71Q-f3-SPB"/>
+                        <outlet property="multiSwitch3" destination="puL-WS-yE9" id="VJD-4y-a0r"/>
+                        <outlet property="multiSwitch4" destination="s48-sr-jmH" id="Q8N-Ap-SGo"/>
                         <outlet property="multipleLabel1" destination="t82-Ic-6CR" id="FCD-Cr-hml"/>
                         <outlet property="multipleLabel2" destination="h3z-XE-aNN" id="aTb-5O-y4s"/>
                         <outlet property="multipleLabel3" destination="UCZ-Tu-QnY" id="fOS-ph-llJ"/>
