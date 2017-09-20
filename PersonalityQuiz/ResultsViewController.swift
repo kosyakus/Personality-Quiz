@@ -19,6 +19,7 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
 
         calculatePersonalityResult()
+        navigationItem.hidesBackButton = true
     }
 
     override func didReceiveMemoryWarning() {
