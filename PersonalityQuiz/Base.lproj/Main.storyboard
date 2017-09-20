@@ -306,6 +306,10 @@
                     <navigationItem key="navigationItem" title="Results" id="ThN-VP-0Gf">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="cyF-qv-p9x"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="cRb-rK-9Fg" id="fNR-bD-WHz"/>
+                        <outlet property="resultDefinitionLabel" destination="a2V-Th-HSv" id="cw9-O6-KWb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4a-jA-ERJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

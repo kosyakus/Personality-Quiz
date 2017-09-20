@@ -12,6 +12,9 @@ class ResultsViewController: UIViewController {
     
     var responses: [Answer]!
 
+    @IBOutlet weak var resultAnswerLabel: UILabel!
+    @IBOutlet weak var resultDefinitionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +40,9 @@ class ResultsViewController: UIViewController {
         })
         
         let mostCommonAnswer = frequentAnswersSorted.first!.key
+        
+        resultAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
+        resultDefinitionLabel.text = mostCommonAnswer.definition
     }
     
 
