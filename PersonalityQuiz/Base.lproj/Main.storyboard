@@ -304,7 +304,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="ThN-VP-0Gf">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="cyF-qv-p9x"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="cyF-qv-p9x">
+                            <connections>
+                                <segue destination="Vcw-8k-QRy" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="gf8-zL-4iJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="resultAnswerLabel" destination="cRb-rK-9Fg" id="fNR-bD-WHz"/>
@@ -312,6 +316,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4a-jA-ERJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Vcw-8k-QRy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2490" y="124"/>
         </scene>
